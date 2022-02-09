@@ -1,0 +1,9 @@
+---
+version: "3.7"
+
+services:
+  luftdaten2mqtt:
+    restart: unless-stopped
+    image: zeridon/luftdaten2mqtt:1.1.1
+    build:
+      context: https://github.com/zeridon/luftdaten2mqtt.git#v1.1.1
